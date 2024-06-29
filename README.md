@@ -25,10 +25,10 @@ URL: https://www.kaggle.com/competitions/titanic
 ### 評価指標
 $$Accuracy=\frac{正解数}{回答数}$$
 ## 提出ログ
-|日付|精度|モデル|工夫した点|
-|:---|:---|:---|:---|
-|2024/06/28|0.77751|ランダムフォレスト<br>n_estimators=100,max_depth=5|なし（ベースライン）|
-|2024/06/28|0.76794|LightGBM<br>    objective="binary",learning_rate=0.025,num_leaves=20,max_depth=5,verbosity=-1,|モデルの変更|
+|日付|精度|モデル|パラメータ|工夫した点|
+|:---|:---|:---|:---|:---|
+|2024/06/28|0.77751|ランダムフォレスト|n_estimators=100<br>max_depth=5<br>|なし（ベースライン）|
+|2024/06/28|0.76794|LightGBM|objective="binary"<br>learning_rate=0.025<br>num_leaves=20<br>max_depth=5<br>verbosity=-1|モデルの変更|
 ## アイデア
 - 年齢と他の変数の関係を分析して，他の変数から欠損値を推測して補完する
 - その他，特徴エンジニアリング！
