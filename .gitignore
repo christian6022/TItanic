@@ -1,4 +1,4 @@
 /build/script.py
 
 # データセット(.zip)
-.zip
+/titanic/data/
