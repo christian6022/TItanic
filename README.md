@@ -25,3 +25,4 @@ URL: https://www.kaggle.com/competitions/titanic
 ## 提出ログ
 |日付|精度()|モデル|工夫した点|
 |:---|:---|:---|:---|
+|2024/06/28|0.77751|ランダムフォレスト<br>n_estimators=100,max_depth=5|なし（ベースライン）|
