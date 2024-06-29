@@ -22,7 +22,12 @@ URL: https://www.kaggle.com/competitions/titanic
 |fare|旅客運賃||
 |cabin|キャビン番号||
 |embarked|乗船港|C:Cherbourg, Q:Queenstown, S:Southampton|
+### 評価指標
+$$Accuracy=\frac{正解数}{回答数}$$
 ## 提出ログ
-|日付|精度()|モデル|工夫した点|
+|日付|精度|モデル|工夫した点|
 |:---|:---|:---|:---|
 |2024/06/28|0.77751|ランダムフォレスト<br>n_estimators=100,max_depth=5|なし（ベースライン）|
+|2024/06/28|0.76794|LightGBM<br>    objective="binary",learning_rate=0.025,num_leaves=20,max_depth=5,verbosity=-1,|モデルの変更|
+## アイデア
+- 年齢と他の変数の関係を分析して，他の変数から欠損値を推測して補完する
