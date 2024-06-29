@@ -31,3 +31,4 @@ $$Accuracy=\frac{正解数}{回答数}$$
 |2024/06/28|0.76794|LightGBM<br>    objective="binary",learning_rate=0.025,num_leaves=20,max_depth=5,verbosity=-1,|モデルの変更|
 ## アイデア
 - 年齢と他の変数の関係を分析して，他の変数から欠損値を推測して補完する
+- その他，特徴エンジニアリング！
