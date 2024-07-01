@@ -29,6 +29,9 @@ $$Accuracy=\frac{正解数}{回答数}$$
 |:---|:---|:---|:---|:---|
 |2024/06/28|0.77751|ランダムフォレスト|n_estimators=100<br>max_depth=5<br>|なし（ベースライン）|
 |2024/06/28|0.76794|LightGBM|objective="binary"<br>learning_rate=0.025<br>num_leaves=20<br>max_depth=5<br>verbosity=-1|モデルの変更|
+|2024/07/01|0.77990|LightGBM|objective="binary"<br>learning_rate=0.025<br>num_leaves=20<br>max_depth=5<br>verbosity=-1|欠損のない変数から年齢を予測補完|
+|2024/07/01|0.78229|LightGMB|objective="binary"<br>learning_rate=0.025<br>num_leaves=20<br>max_depth=5<br>verbosity=-1|苗字，Ticketから情報抽出|
+
 ## アイデア
 - 年齢と他の変数の関係を分析して，他の変数から欠損値を推測して補完する
 - その他，特徴エンジニアリング！
